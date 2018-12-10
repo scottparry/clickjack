@@ -66,7 +66,7 @@
                             $url = "";
                         endif;
 
-                        $ch = curl_init();
+                        $ch = curl_init($url);
 
                         curl_setopt( $ch, CURLOPT_URL, $url );
                         curl_setopt( $ch, CURLOPT_HEADER, true );
@@ -76,6 +76,8 @@
                         $a      = curl_exec( $ch );
                         $url    = curl_getinfo( $ch, CURLINFO_EFFECTIVE_URL );
                         $domain = parse_url( $url );
+                        
+                        curl_close($ch);
                     ?>
                     <div class="one-full">
                         <label for="suspiciouslink">Link to Check</label>
