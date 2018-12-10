@@ -51,7 +51,9 @@
                 <!-- intro -->
                 <div id="intro" class="textcenter">
                     <h2>Suspicious URL checker</h2>
-                    <p>Safely check suspicious links without visiting them</p>
+                    <p>
+                        Many SPAM emails contain suspicious links that have been passed through URL shorteners<br>to disguise their true location. ClickJack helps you safely check the suspicious links without ever visiting them.<br>Simply paste in the URL and click fetch link to see it's true location.
+                    </p>
                 </div>
                 <!--/intro -->
 
