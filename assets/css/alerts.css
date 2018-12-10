@@ -1,0 +1,97 @@
+/**
+ * Alerts
+ */
+.alert
+{
+	background: #f3f3f3;
+	color: #aaaaaa;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin: 5px 0 25px 0;
+    padding: 15px;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.alert p
+{
+    color: #111111;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.alert.alert-info
+{
+    background: #E4F4FD!important;
+    color: #407EA1!important;
+}
+
+.alert.alert-info p
+{
+    color: #407EA1!important;
+}
+
+.alert.alert-success
+{
+    background: #E6F4D8!important;
+    color: #61801B!important;
+}
+
+.alert.alert-success p
+{
+    color: #61801B!important;
+}
+
+.alert.alert-warning
+{
+    background: #F9F9D5!important;
+    color: #7C7548!important;
+}
+
+.alert.alert-warning p
+{
+    color: #7C7548!important;
+}
+
+.alert.alert-error
+{
+    background: #FBE3E3!important;
+    color: #D34047!important;
+}
+
+.alert.alert-error p
+{
+    color: #D34047!important;
+}
+/**
+ * iPads (portrait)
+ */
+@media only screen and (min-width: 767px) {
+
+}
+/**
+ * iPads (landscape)
+ */
+@media only screen and (min-width: 1023px) {
+
+}
+/**
+ * Desktops
+ */
+@media only screen and (min-width: 1279px) {
+	.alert,
+	.alert p
+	{
+		font-size: 16px;
+	}
+}
+/**
+ * Large Desktops
+ */
+@media only screen and (min-width: 1679px) {
+
+}
