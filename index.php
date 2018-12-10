@@ -73,10 +73,9 @@
                         curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, true );
                         curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
 
-                        $a   = curl_exec( $ch );
-                        $url = curl_getinfo( $ch, CURLINFO_EFFECTIVE_URL );
-
-                        $parse = parse_url( $url );
+                        $a      = curl_exec( $ch );
+                        $url    = curl_getinfo( $ch, CURLINFO_EFFECTIVE_URL );
+                        $domain = parse_url( $url );
                     ?>
                     <div class="one-full">
                         <label for="suspiciouslink">Link to Check</label>
@@ -89,7 +88,7 @@
                     <?php if ( isset( $_POST['suspiciouslink'] ) && filter_var( $_POST['suspiciouslink'], FILTER_VALIDATE_URL ) ) : ?>
                         <div id="reallink" class="one_full textcenter">
                             <p class="alert alert-info"><?php echo strip_tags( trim( $url ) ); ?></p>
-                            <p><a class="button button-large button-green" href="http://www.google.com/safebrowsing/diagnostic?site=<?php echo $parse['host']; ?>" title="Check this link with Google Safe Browsing" target="_blank">Check this link with Google Safe Browsing</a></p>
+                            <p><a class="button button-large button-green" href="http://www.google.com/safebrowsing/diagnostic?site=<?php echo $domain['host']; ?>" title="Check this link with Google Safe Browsing" target="_blank">Check this link with Google Safe Browsing</a></p>
                         </div>
                     <?php endif; ?>
                 </form>
