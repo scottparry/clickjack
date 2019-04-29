@@ -76,7 +76,7 @@
                         $a      = curl_exec( $ch );
                         $url    = curl_getinfo( $ch, CURLINFO_EFFECTIVE_URL );
                         $domain = parse_url( $url );
-                        
+
                         curl_close($ch);
                     ?>
                     <div class="one-full">
@@ -109,7 +109,7 @@
             <p>
 	            Released under the <a href="//github.com/scottparry/clickjack/blob/master/LICENSE" target="_blank">GPL v3 license</a>.
 
-                Copyright &copy; 2018 <a href="#"><i class="fas fa-unlink"></i> ClickJack</a>.
+                Copyright &copy; <?php echo date('Y'); ?> <a href="#"><i class="fas fa-unlink"></i> ClickJack</a>.
                 <br>
                 Icons by <a href="//fontawesome.com/" target="_blank">FontAwesome</a>.
             </p>
